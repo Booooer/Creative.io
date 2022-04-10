@@ -1,0 +1,51 @@
+.wrapper{
+  margin: 0 auto;
+  width: 1200px;
+}
+.item img{
+  width: 220px;
+  height: 260px;
+  border-radius: 25px;
+  margin-left: 60px;
+}
+.slider-container{
+  margin-top: 20px;
+  width: 1200px;
+  overflow: hidden;
+  display: flex;
+}
+.slider-track{
+  width: 1600px;
+  display: flex;
+  position: relative;
+}
+.slider-buttons{
+  position: absolute;
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider-track .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
